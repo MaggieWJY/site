@@ -44,3 +44,16 @@
                   background-color: forestgreen;
                   color: white;
             }
+
+            table, th, td {
+                    border: 1px solid black;
+                    color: black;
+                    
+            }
+
+            .inputbox {
+                margin-top: 20px;
+                margin-bottom: 20px;
+                float: right;
+            }
+            
