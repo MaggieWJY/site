@@ -22,41 +22,69 @@
     
         </div>
         
-        <div st>
-        
-        </div>
         
         <div style="padding-left: 30px;">
+        <h2 style= "padding-right: 20px; float:right; color: blue">⇧⇧Search A Pokemon⇧⇧</h2>
         <h1>Home page</h1>
         <p>This is my home page</p>
             
               <div id="info"></div>
+            
+        
             
         <a href="http://www.cnn.com" target="_blank" style= "padding-left: 50px;">CNN - USA news network</a><br>
         <img src= "pikachu.gif" style= "padding: 100px; padding-left: 200px;">
         </div>
         
         <table style="width:75%; text-align: center;">
-            <tr>
-            <th>Firstname</th>
-            <th>Lastname</th>
-            <th>Age</th>
+          <tr>
+            <th>Name</th>
+            <th>Picture</th>
+            <th>Type</th>
           </tr>
           <tr>
-            <td>Jill</td>
-            <td>Smith</td>
-            <td>50</td>
+            <td>Pikachu</td>
+            <td><img src= "Pikachu.png" style="width:300px"></td>
+            <td>Electric</td> 
+          </tr>   
+          <tr>
+            <td>Charmander</td>
+            <td><img src= "Charmander.png" style="width:300px"></td>
+            <td>Fire</td>
           </tr>
           <tr>
-            <td>Eve</td>
-            <td>Jackson</td>
-            <td>94</td>
+            <td>Bulbasaur</td>
+            <td><img src= "Bulbasaur.png" style="width:300px"></td>
+            <td>Grass</td>
           </tr>
+          <tr>
+            <td>Eevee</td>
+            <td><img src= "Eevee.png" style="width:300px"></td>
+            <td>Normal</td>
+          </tr>  
+
+            
+
         </table>
         
         <script>
+            // Get the input field
+            var input = document.getElementById("myinput");
 
-        function myfunction() {
+            // Execute a function when the user releases a key on the keyboard
+            input.addEventListener("keyup", function(event) {
+              // Number 13 is the "Enter" key on the keyboard
+              if (event.keyCode === 13) {
+                // Cancel the default action, if needed
+                event.preventDefault();
+                // Trigger the button element with a click
+                //document.getElementById("myBtn").click();
+                myfunction();
+              }
+            });
+                   
+            
+            function myfunction() {
 
            
             //data = [{pokemon:"bulbasur",type:"grass"},{pokemon: "pikachu",type:"electric"},{pokemon:"charmander",type:"fire"}];
